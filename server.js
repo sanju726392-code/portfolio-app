@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-// Contact Form (MongoDB disabled temporarily)
+// Contact Form (temporary version without MongoDB)
 app.post("/contact", async (req, res) => {
     res.json({
         success: true,
@@ -19,7 +19,7 @@ app.post("/contact", async (req, res) => {
     });
 });
 
-// View Contacts Route
+// Contacts Route
 app.get("/contacts", async (req, res) => {
     res.json([]);
 });
