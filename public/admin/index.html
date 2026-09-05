@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sanju Admin</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+<section id="loginScreen" class="login-screen">
+  <div class="login-card">
+    <div class="logo">SA</div>
+    <div class="label">PRIVATE ADMIN</div>
+    <h1>Welcome back</h1>
+    <p class="intro">Manage enquiries from your portfolio in one place.</p>
+    <form id="loginForm" novalidate>
+      <label for="loginEmail">Email</label>
+      <input id="loginEmail" type="email" autocomplete="username" placeholder="Admin email" required>
+      <label for="loginPassword">Password</label>
+      <input id="loginPassword" type="password" autocomplete="current-password" placeholder="Admin password" required>
+      <button class="primary" type="submit">Sign in</button>
+      <div id="loginError" class="error" aria-live="polite"></div>
+    </form>
+    <a class="back" href="/">← Back to portfolio</a>
+  </div>
+</section>
+
+<section id="dashboard" class="dashboard hidden">
+  <aside class="sidebar">
+    <div class="brand-area">
+      <div class="logo small">SA</div>
+      <div><strong>Sanju Admin</strong><small>Portfolio</small></div>
+    </div>
+    <nav>
+      <button class="nav active" data-page="overview"><span>⌂</span>Overview</button>
+      <button class="nav" data-page="messages"><span>✉</span>Messages</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="/">↗ View Portfolio</a>
+      <button id="logoutButton">⇥ Logout</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <header class="header">
+      <div><span class="label">ADMIN DASHBOARD</span><h1 id="pageTitle">Overview</h1></div>
+      <div class="header-actions"><span id="adminEmail"></span><button id="refreshButton" class="secondary">↻ Refresh</button></div>
+    </header>
+
+    <section id="overviewPage">
+      <div class="stats">
+        <div class="stat"><span>Total Messages</span><strong id="totalMessages">0</strong></div>
+        <div class="stat"><span>Unread</span><strong id="unreadMessages">0</strong></div>
+        <div class="stat"><span>Read</span><strong id="readMessages">0</strong></div>
+        <div class="stat"><span>Last 30 Days</span><strong id="recentMessages">0</strong></div>
+      </div>
+      <div class="panel">
+        <div class="panel-title"><div><h2>Message activity</h2><p>Enquiries over the last seven days.</p></div></div>
+        <div id="chart" class="chart"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-title"><div><h2>Recent messages</h2><p>Your latest portfolio enquiries.</p></div><button id="viewMessages" class="secondary">View all</button></div>
+        <div id="recentMessages"></div>
+      </div>
+    </section>
+
+    <section id="messagesPage" class="hidden">
+      <div class="panel">
+        <div class="toolbar">
+          <input id="searchInput" type="search" placeholder="Search name, email or message...">
+          <select id="statusFilter"><option value="all">All</option><option value="new">New</option><option value="read">Read</option><option value="archived">Archived</option></select>
+        </div>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Name</th><th>Email</th><th>Message</th><th>Status</th><th>Date</th><th>Action</th></tr></thead>
+            <tbody id="messagesTable"></tbody>
+          </table>
+        </div>
+        <div class="pagination"><span id="paginationText">0 messages</span><div><button id="prevButton" class="secondary">Previous</button><button id="nextButton" class="secondary">Next</button></div></div>
+      </div>
+    </section>
+  </main>
+</section>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-card">
+    <button id="closeModal" class="close">×</button>
+    <span class="label">MESSAGE</span>
+    <h2 id="modalName">—</h2>
+    <a id="modalEmail" href="#">—</a>
+    <div id="modalDate" class="muted">—</div>
+    <div id="modalMessage" class="message-box"></div>
+    <div class="modal-actions">
+      <button id="readButton" class="secondary">Mark read</button>
+      <button id="archiveButton" class="secondary">Archive</button>
+      <button id="deleteButton" class="danger">Delete</button>
+    </div>
+  </div>
+</div>
+<script src="/admin/admin.js"></script>
+</body>
+</html>

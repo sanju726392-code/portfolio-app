@@ -1,211 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sanju A | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sanju A — Full-stack developer and BCA student building polished web products, AI experiments and practical digital experiences.">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Sanju A | Full-Stack Developer">
+  <meta property="og:description" content="Portfolio of Sanju A — full-stack development, AI/ML and product-focused projects.">
+  <meta property="og:type" content="website">
+  <title>Sanju A | Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
+  <header class="header" id="top">
+    <div class="container nav-shell">
+      <a href="#top" class="brand" aria-label="Sanju A home">
+        <span class="brand-mark">SA</span>
+        <span class="brand-copy"><strong>Sanju A</strong><small>Developer portfolio</small></span>
+      </a>
 
-            <div class="logo">
-                Sanju A
-            </div>
+      <nav class="nav desktop-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" aria-pressed="false">☼</button>
+        <a class="btn btn-primary btn-small" href="#contact">Let's talk <span>↗</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        </nav>
-    </header>
-
-
-    <!-- Home Section -->
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <h1>Hello, I'm <span>Sanju A</span></h1>
-
-            <h2>Full Stack Developer</h2>
-
-            <p>
-                I am interested in Web Development, Machine Learning,
-                Artificial Intelligence and Computer Vision.
-            </p>
-
-            <a href="#contact" class="btn">
-                Contact Me
-            </a>
-
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="availability"><span class="pulse"></span> Open to internships, collaborations & freelance work</div>
+          <p class="eyebrow">BCA · Full-stack development · AI/ML</p>
+          <h1>Building digital experiences that feel <em>thoughtful</em>.</h1>
+          <p class="hero-text">I'm Sanju A — a developer who enjoys turning ideas into useful products, clean interfaces and practical full-stack systems. I learn by building, then keep refining until the experience feels right.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a>
+            <a class="btn btn-ghost" href="#about">More about me</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>03+</strong><span>Core project builds</span></div>
+            <div><strong>Full-stack</strong><span>Web app focus</span></div>
+            <div><strong>AI / CV</strong><span>Applied exploration</span></div>
+          </div>
         </div>
 
+        <div class="hero-portrait reveal reveal-delay">
+          <div class="portrait-frame">
+            <div class="portrait-ring"></div>
+            <img src="assets/profile.jpg" alt="Sanju A wearing a dark blazer and white shirt" class="profile-photo">
+            <span class="portrait-badge badge-top">SANJU A</span>
+            <span class="portrait-badge badge-bottom">BUILD · LEARN · SHIP</span>
+          </div>
+          <div class="mini-card mini-card-one"><span>⌘</span><div><b>Full-stack</b><small>UI → API → Data</small></div></div>
+          <div class="mini-card mini-card-two"><span>✦</span><div><b>AI / ML</b><small>Computer vision experiments</small></div></div>
+        </div>
+      </div>
     </section>
 
-
-    <!-- About Section -->
-    <section id="about" class="section">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a Computer Science graduate with an interest in
-            Full Stack Web Development, Machine Learning and Artificial
-            Intelligence. I enjoy developing applications and solving
-            real-world problems using technology.
-        </p>
-
+    <section class="ticker" aria-label="Skills and interests">
+      <div class="ticker-track">
+        <span>FULL-STACK DEVELOPMENT</span><b>✦</b><span>MONGODB</span><b>✦</b><span>NODE.JS</span><b>✦</b><span>JAVASCRIPT</span><b>✦</b><span>PYTHON</span><b>✦</b><span>MACHINE LEARNING</span><b>✦</b><span>COMPUTER VISION</span><b>✦</b>
+        <span>FULL-STACK DEVELOPMENT</span><b>✦</b><span>MONGODB</span><b>✦</b><span>NODE.JS</span><b>✦</b><span>JAVASCRIPT</span><b>✦</b><span>PYTHON</span><b>✦</b><span>MACHINE LEARNING</span><b>✦</b><span>COMPUTER VISION</span><b>✦</b>
+      </div>
     </section>
 
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="section-intro reveal">
+          <span class="section-label">01 — About</span>
+          <h2>A developer with a builder's mindset.</h2>
+          <p>I enjoy the entire journey of a product: understanding a problem, designing the interface, building the backend, connecting data and polishing the details.</p>
+        </div>
+        <div class="about-panel reveal reveal-delay">
+          <div class="about-photo-wrap"><img src="assets/profile.jpg" alt="Sanju A profile portrait" class="about-photo"></div>
+          <div class="about-content">
+            <div class="about-heading"><span class="live-mark"></span><span>Currently focused on</span></div>
+            <h3>Modern web development + applied AI.</h3>
+            <p>My portfolio reflects the technologies I am actively practicing and the kind of real-world systems I want to build next.</p>
+            <div class="value-list">
+              <div><span>01</span><strong>Product thinking</strong><small>Build for a clear user need.</small></div>
+              <div><span>02</span><strong>Clean foundations</strong><small>Readable UI, APIs and data flow.</small></div>
+              <div><span>03</span><strong>Continuous learning</strong><small>Improve through hands-on projects.</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section gray">
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-label">02 — Skills</span>
+          <h2>Tools I use to turn ideas into working products.</h2>
+          <p>Strong fundamentals, practical projects and a willingness to learn whatever the problem needs.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card reveal"><div class="skill-number">01</div><div class="skill-icon">⌘</div><h3>Frontend</h3><p>Responsive, accessible interfaces with attention to hierarchy and interaction.</p><div class="chip-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive UI</span></div></article>
+          <article class="skill-card reveal reveal-delay"><div class="skill-number">02</div><div class="skill-icon">⌁</div><h3>Backend</h3><p>REST APIs and server logic that connect user experiences to real data.</p><div class="chip-list"><span>Node.js</span><span>Express</span><span>REST APIs</span><span>Validation</span></div></article>
+          <article class="skill-card reveal"><div class="skill-number">03</div><div class="skill-icon">◈</div><h3>Database</h3><p>Data modeling and CRUD workflows with a focus on reliable application flow.</p><div class="chip-list"><span>MongoDB</span><span>Mongoose</span><span>JSON</span><span>CRUD</span></div></article>
+          <article class="skill-card reveal reveal-delay"><div class="skill-number">04</div><div class="skill-icon">✦</div><h3>AI & Computer Vision</h3><p>Hands-on exploration of machine learning and vision-based detection workflows.</p><div class="chip-list"><span>Python</span><span>ML</span><span>YOLO</span><span>Image Processing</span></div></article>
+        </div>
+      </div>
+    </section>
 
-        <h2>Technical Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">Express.js</div>
-            <div class="skill">MongoDB</div>
-            <div class="skill">Python</div>
-            <div class="skill">Java</div>
-            <div class="skill">Machine Learning</div>
-
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div><span class="section-label">03 — Selected work</span><h2>Projects with a reason to exist.</h2></div>
+          <p>Each project is a chance to practice a real part of software development — product UX, APIs, data or intelligent systems.</p>
         </div>
 
-    </section>
-
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-
-        <h2>Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-
-                <h3>Butterfly Identification using YOLO</h3>
-
-                <p>
-                    A real-time object detection system developed for
-                    identifying butterfly species using the YOLO model.
-                </p>
-
+        <div class="project-stack">
+          <article class="project-card featured-project reveal">
+            <div class="project-art localfix-art">
+              <div class="art-top"><span>LOCALFIX</span><span>PRODUCT BUILD</span></div>
+              <div class="localfix-ui">
+                <div class="localfix-header"><b>What service do you need?</b><span>⌖ Bengaluru</span></div>
+                <div class="service-pills"><span>🔧 Plumbing</span><span>⚡ Electrical</span><span>❄️ AC Service</span><span>🧹 Cleaning</span></div>
+                <div class="pro-row"><div class="pro-avatar">R</div><div><b>Rahul</b><small>AC Repair · 4.8 ★ · 82 jobs</small></div><strong>₹500</strong></div>
+              </div>
             </div>
-
-
-            <div class="project-card">
-
-                <h3>Blood Cell Detection</h3>
-
-                <p>
-                    A microscopic image analysis project for detecting
-                    and classifying different types of blood cells.
-                </p>
-
+            <div class="project-body">
+              <div class="project-tag">01 · Full-stack product concept</div>
+              <h3>LocalFix — Home Service Booking Platform</h3>
+              <p>A service marketplace concept that connects customers with local professionals through discovery, booking, tracking, reviews and role-based dashboards.</p>
+              <div class="project-footer"><div class="chip-list"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Android</span></div><span class="status-pill">In progress</span></div>
             </div>
+          </article>
 
+          <div class="project-grid-two">
+            <article class="project-card reveal">
+              <div class="project-art vision-art"><span class="art-label">YOLO · DETECTION</span><div class="detection-box box-a"><b>BUTTERFLY</b><small>98.4%</small></div><div class="detection-box box-b"><b>SPECIES</b><small>93.1%</small></div><div class="scan-line"></div></div>
+              <div class="project-body"><div class="project-tag">02 · AI / Computer Vision</div><h3>Butterfly Identification using YOLO</h3><p>Object-detection work exploring image and video recognition of butterfly species.</p><div class="chip-list"><span>Python</span><span>YOLO</span><span>Computer Vision</span></div></div>
+            </article>
+            <article class="project-card reveal reveal-delay">
+              <div class="project-art blood-art"><span class="art-label">IMAGE ANALYSIS</span><span class="cell c1"></span><span class="cell c2"></span><span class="cell c3"></span><span class="cell c4"></span><span class="cell c5"></span></div>
+              <div class="project-body"><div class="project-tag">03 · Machine Learning</div><h3>Blood Cell Detection</h3><p>Microscopic image-analysis practice focused on visual detection and classification workflows.</p><div class="chip-list"><span>Python</span><span>ML</span><span>Image Processing</span></div></div>
+            </article>
+          </div>
 
-            <div class="project-card">
-
-                <h3>Personal Portfolio Website</h3>
-
-                <p>
-                    A full stack portfolio application developed using
-                    HTML, CSS, JavaScript, Node.js, Express.js and MongoDB.
-                </p>
-
-            </div>
-
+          <article class="project-card portfolio-project reveal">
+            <div class="project-art browser-art"><span class="art-label">THIS WEBSITE</span><div class="browser-window"><div class="browser-bar"><i></i><i></i><i></i><span>sanju-a.dev</span></div><div class="browser-content"><strong>Build. Learn. Ship.</strong><div></div><div></div><div class="wide"></div></div></div></div>
+            <div class="project-body"><div class="project-tag">04 · Full-stack portfolio</div><h3>Professional Developer Portfolio</h3><p>This portfolio itself: responsive frontend, Express backend, MongoDB-powered contact messages, validation and a production-friendly structure.</p><div class="chip-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>MongoDB</span></div></div>
+          </article>
         </div>
-
+      </div>
     </section>
 
-
-    <!-- Education Section -->
-    <section id="education" class="section gray">
-
-        <h2>Education</h2>
-
-        <div class="education-card">
-
-            <h3>Bachulor of computer applications</h3>
-
-            <p>University of Mandya</p>
-
+    <section class="section section-dark" id="journey">
+      <div class="container journey-grid">
+        <div class="section-intro reveal"><span class="section-label">04 — Journey</span><h2>Learning by building, one project at a time.</h2><p>A simple progression from fundamentals to full-stack and intelligent-system experiments.</p></div>
+        <div class="timeline reveal reveal-delay">
+          <article class="timeline-item"><span class="timeline-dot"></span><div><small>FOUNDATION</small><h3>Web fundamentals</h3><p>Built confidence with HTML, CSS and JavaScript by creating responsive interfaces.</p></div></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><div><small>BACKEND</small><h3>Server + database development</h3><p>Started connecting real forms and application workflows to Express and MongoDB.</p></div></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><div><small>AI / VISION</small><h3>Machine learning experiments</h3><p>Explored Python, image processing and object detection through practical computer-vision projects.</p></div></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><div><small>NEXT</small><h3>Build bigger products</h3><p>Continue toward polished, production-minded full-stack applications and mobile experiences.</p></div></article>
         </div>
-
+      </div>
     </section>
 
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-
-        <h2>Contact Me</h2>
-
-        <form id="contactForm">
-
-            <input
-                type="text"
-                id="name"
-                placeholder="Enter your name"
-                required
-            >
-
-            <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-                required
-            >
-
-            <textarea
-                id="message"
-                placeholder="Enter your message"
-                required
-            ></textarea>
-
-            <button type="submit">
-                Send Message
-            </button>
-
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal"><span class="section-label">05 — Contact</span><h2>Have an idea worth building?</h2><p>Tell me what you're working on. I'm always interested in learning, collaborating and building something useful.</p>
+          <div class="contact-links"><div class="contact-link"><span>✉</span><div><small>EMAIL</small><b>Use the form →</b></div></div><div class="contact-link"><span>⌁</span><div><small>FOCUS</small><b>Web · Backend · AI/ML</b></div></div><div class="contact-link"><span>◉</span><div><small>AVAILABILITY</small><b>Internships · Projects</b></div></div></div>
+        </div>
+        <form class="contact-form reveal reveal-delay" id="contactForm" novalidate>
+          <div class="form-head"><div><span class="form-eyebrow">START A CONVERSATION</span><h3>Send a message</h3></div><span class="form-step">01 / 01</span></div>
+          <div class="form-grid"><label>Name<input id="name" name="name" type="text" maxlength="80" autocomplete="name" placeholder="Your name" required></label><label>Email<input id="email" name="email" type="email" maxlength="120" autocomplete="email" placeholder="you@example.com" required></label></div>
+          <label>Message<textarea id="message" name="message" rows="6" maxlength="2000" placeholder="Tell me a little about your idea…" required></textarea></label>
+          <div class="form-bottom"><button class="btn btn-primary" type="submit">Send message <span>↗</span></button><p class="form-status" id="status" aria-live="polite"></p></div>
         </form>
-
-        <p id="status"></p>
-
+      </div>
     </section>
+  </main>
 
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            © 2026 Sanju A| Personal Portfolio
-        </p>
-
-    </footer>
-
-
-    <script src="script.js"></script>
-
+  <footer class="footer"><div class="container footer-wrap"><div><strong>Sanju A</strong><span>© <span id="year"></span> Built with curiosity.</span></div><a href="#top">Back to top ↑</a></div></footer>
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
 </body>
-
 </html>

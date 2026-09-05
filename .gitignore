@@ -1,0 +1,13 @@
+# Secrets
+.env
+
+# Dependencies
+node_modules/
+
+# Local backups
+public-backup/
+public-old/
+server-backup.js
+server-before-admin.js
+server - before-admin.js.js
+models/Contact-backup.js
